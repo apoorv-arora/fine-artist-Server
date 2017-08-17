@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="in.artist.database.classes.User" table="user">
+
+		<id column="id" name="userId" type="java.lang.Integer">
+			<generator class="native" />
+		</id>
+		
+		<property column="name" name="name" type="java.lang.String" />
+		<property column="number" name="number" type="java.lang.String" />
+		<property column="email" name="email" type="java.lang.String" />
+		<property column="imageUrl" name="imageUrl" type="java.lang.String" />
+		<property column="created" name="created" type="java.lang.Long" />
+		<property column="modified" name="modified" type="java.lang.Long" />
+	</class>
+</hibernate-mapping>

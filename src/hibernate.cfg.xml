@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:8889/fineArtist</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.c3p0.max_size">500</property>
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		<!-- General Tables -->
+		<mapping resource="in/artist/database/xml/appconfig.hbm.xml" />
+		<mapping resource="in/artist/database/xml/usersession.hbm.xml" />
+		<mapping resource="in/artist/database/xml/user.hbm.xml" />
+		<mapping resource="in/artist/database/xml/course.hbm.xml" />
+		<mapping resource="in/artist/database/xml/coursecategory.hbm.xml" />
+		<mapping resource="in/artist/database/xml/subcourse.hbm.xml" />
+		<mapping resource="in/artist/database/xml/subcoursedetail.hbm.xml" />
+		<mapping resource="in/artist/database/xml/subcoursedetaillabel.hbm.xml" />
+		<mapping resource="in/artist/database/xml/courseobjectives.hbm.xml" />
+		<mapping resource="in/artist/database/xml/blogupdates.hbm.xml" />
+
+	</session-factory>
+</hibernate-configuration>

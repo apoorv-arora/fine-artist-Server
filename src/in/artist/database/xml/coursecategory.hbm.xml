@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="in.artist.database.classes.CourseCategory" table="coursecategory">
+
+		<id column="id" name="courseCategoryId" type="java.lang.Integer">
+			<generator class="native" />
+		</id>
+		
+		<property column="categoryTitle" name="categoryTitle" type="java.lang.String" />
+		<property column="categoryIconUrl" name="categoryIconUrl" type="java.lang.String" />
+	</class>
+</hibernate-mapping>

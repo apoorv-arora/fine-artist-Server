@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="in.artist.database.classes.SubCourse" table="subcourse">
+
+		<id column="id" name="subCourseId" type="java.lang.Integer">
+			<generator class="native" />
+		</id>
+		
+		<property column="courseId" name="courseId" type="java.lang.Integer" />
+		<property column="title" name="title" type="java.lang.String" />
+		<property column="startDate" name="startDate" type="java.lang.Long" />
+		<property column="commitment" name="commitment" type="java.lang.String" />
+		<property column="aboutTheCourse" name="aboutTheCourse" type="java.lang.String" />
+	</class>
+</hibernate-mapping>
