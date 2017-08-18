@@ -17,6 +17,7 @@ public class DBUtil {
 	public static final String TABLE_COURSE_CATEGORY = "coursecategory";
 	public static final String TABLE_COURSE = "course";
 	public static final String TABLE_BLOG_UPDATES = "blogupdates";
+	public static final String TABLE_COURSE_SUBSCRIPTION = "subscription";
 	public static final String TABLE_SUB_COURSE = "subcourse";
 	public static final String TABLE_SUB_COURSE_DETAIL = "subcoursedetail";
 	public static final String TABLE_SUB_COURSE_DETAIL_LABEL = "subcoursedetaillabel";
@@ -35,10 +36,21 @@ public class DBUtil {
 	public static final String COLUMN_USER_SESSION_UID = "uid";
 	public static final String COLUMN_USER_SESSION_CREATED = "created";
 	public static final String COLUMN_USER_SESSION_MODIFIED = "modified";
+	
+	public static final String COLUMN_SUBSCRIPTION_USER_ID = "userId";
+	public static final String COLUMN_SUBSCRIPTION_COURSE_ID = "courseId";
 
 	public static final String COLUMN_APP_CONFIG_ID = "appConfigId";
 	public static final String COLUMN_APP_CONFIG_KEY = "key";
 	public static final String COLUMN_APP_CONFIG_VALUE = "value";
+
+	public static final String COLUMN_COURSE_ID = "id";
+	public static final String COLUMN_COURSE_TITLE = "title";
+	public static final String COLUMN_COURSE_SHORT_DESCRIPTION = "shortDescription";
+	public static final String COLUMN_COURSE_COVER_IMAGE_URL = "coverImageUrl";
+	public static final String COLUMN_COURSE_CATEGORY_ID = "categoryId";
+	public static final String COLUMN_COURSE_LONG_DESCRIPTION = "longDescription";
+	public static final String COLUMN_COURSE_CREATED_BY_URL = "createdByImageUrl";
 
 	private static SessionFactory configureSessionFactory() throws HibernateException {
 

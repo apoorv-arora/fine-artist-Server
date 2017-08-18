@@ -26,6 +26,7 @@
 		<mapping resource="in/artist/database/xml/subcoursedetaillabel.hbm.xml" />
 		<mapping resource="in/artist/database/xml/courseobjectives.hbm.xml" />
 		<mapping resource="in/artist/database/xml/blogupdates.hbm.xml" />
+		<mapping resource="in/artist/database/xml/usercoursesubscription.hbm.xml" />
 
 	</session-factory>
 </hibernate-configuration>
